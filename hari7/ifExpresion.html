@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan if else javascript</title>
+  </head>
+  <body>
+    <script>
+      const nilaiUlangan = Number(prompt("Masukan Nilai anda"));
+      if (isNaN(nilaiUlangan) == true) {
+        alert("Masukan angka bukan huruf!");
+      } else {
+        if (nilaiUlangan > 80) {
+          alert("Selamat anda telah lulus");
+        } else if (nilaiUlangan < 80) {
+          alert("Maaf, anda tidak lulus");
+        }
+      }
+    </script>
+  </body>
+</html>

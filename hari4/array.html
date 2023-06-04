@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array pada javascript</title>
+  </head>
+  <body></body>
+  <script>
+    let namaSiswa = ["Eko", "Budi", "Kuriawan", "Kanedy"];
+    //  menampilkan isi array
+    document.writeln(namaSiswa[0]);
+    document.writeln(namaSiswa[1]);
+    document.writeln(namaSiswa[2]);
+    document.writeln("<br>");
+    // menampilkan isi array dengan looping
+    for (let i = 0; i < namaSiswa.length; i++) {
+      document.writeln(namaSiswa[i]);
+    }
+    // untuk menambahkan array gunakan function push
+    namaSiswa.push("Kamaludin", "Akbar");
+    // console.table digunakan melihat data array dan panjang array secara detail
+    namaSiswa.push("Budi", "Badi");
+    console.table(namaSiswa);
+
+    // Delete digunakan untuk menghapus data array namun tidak mengubah posisi index
+    delete namaSiswa[0];
+    namaSiswa.push("kahfi");
+    console.table(namaSiswa);
+  </script>
+</html>

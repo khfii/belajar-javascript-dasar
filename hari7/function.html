@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>function javascript</title>
+  </head>
+  <body>
+    <script>
+      // membuat function tanpa parameter
+      // function tampilData() {
+      //   document.writeln("Selamat Datang");
+      // }
+      // // menampilkan function
+      // tampilData();
+
+      function sayHello(name) {
+        alert(`Hallo ${name}, Selamat sore`);
+      }
+      const charValid = /^[a-z A-Z]+$/;
+      const name = prompt("Masukan nama anda ");
+      if (name.match(charValid)) {
+        sayHello(name);
+      } else {
+        alert("Masukan huruf bukan angka!");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Return value javascript</title>
+  </head>
+  <body>
+    <script>
+      let firstName, lastName;
+      function Person(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        const fullName = this.firstName + this.lastName;
+        return fullName;
+      }
+
+      Person();
+
+      function isContains(array, searchValue) {
+        for (element of array) {
+          console.info(`Data Array ke ${element}`);
+          if (element === searchValue) {
+            return true;
+          }
+          console.info(element);
+        }
+        return false;
+      }
+
+      const array = [10, 20, 30, 40, 50];
+      const search = 40;
+      const result = isContains(array, search);
+
+      function car(carName, carType) {
+        console.log(carName);
+        console.log(carType);
+      }
+
+      car("Toyota", "A002");
+    </script>
+  </body>
+</html>

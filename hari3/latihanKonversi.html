@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Koversi tipe data</title>
+  </head>
+  <body></body>
+  <script>
+    let bilanganPertama = Number(prompt("Masukan bilangan pertama"));
+    let bilanganKedua = Number(prompt("Masukan bilangan Kedua"));
+    // pengecekan jika yang dimasukan user bukan angka
+    // isNaN function
+    if (isNaN(bilanganPertama) == true && isNaN(bilanganKedua) == true) {
+      alert("Masukan angka bukan huruf");
+    } else {
+      alert(
+        `Hasil Penjumalahan ${bilanganPertama} + ${bilanganKedua} adalah ${
+          bilanganPertama + bilanganKedua
+        }`
+      );
+    }
+
+   
+  </script>
+</html>

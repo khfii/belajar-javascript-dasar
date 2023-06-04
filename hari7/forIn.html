@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perulangan for in javascript</title>
+  </head>
+  <body>
+    <script>
+      // for in sering digunakan untuk perulangan pada object
+      const orang = {
+        Nama: "Ashabul Kahfi",
+        Gender: "Laki-laki",
+        Umur: 20,
+      };
+
+      for (const properti in orang) {
+        document.writeln(`<p> ${properti} : ${orang[properti]}</p>`);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>with Statement</title>
+  </head>
+  <body>
+    <script>
+      // membuat object pada javascript
+      const mobil = {
+        namaMobil: "Toyota",
+        tipeMobil: "AU200",
+        tahunKeluaran: 2005,
+      };
+
+      // mengakses object tanpa with statement di javascript
+      document.writeln(`<p>Nama Mobil : ${mobil.namaMobil}</p>`);
+      document.writeln(`<p>Tipe Mobil : ${mobil.tipeMobil}</p>`);
+      document.writeln(`<p>Tahun Keluaran : ${mobil.tahunKeluaran}</p>`);
+
+      // mengakses object dengan with statement
+      with (mobil) {
+        document.writeln(`<p> Nama Mobil : ${namaMobil} </p>`);
+        document.writeln(`<p> Tipe Mobil : ${tipeMobil} </p>`);
+        document.writeln(`<p> Tahun Keluaran :                                                                                                                                                                                                                                                                                                                                                                                                ${tahunKeluaran} </p>`);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <titl>Game Suit Jawa</titl  e>
+  </head>
+  <body>
+    <script>
+      let user = prompt("gunting : batu : kertas?");
+      let com = Math.random();
+      if (com >= 0.1 && com <= 0.5) {
+        com = "gunting";
+      } else if (com >= 0.6 && 0.9) {
+        com = "kertas";
+      } else {
+        com = "batu";
+      }
+      if (user === "gunting") {
+        if (com === "gunting") {
+          alert("Yeay game seri");
+        } else if (com === "batu") {
+          alert("kamu kalah");
+        } else if (com === "kertas") {
+          alert("Kamu menang");
+        }
+      }
+    </script>
+  </body>
+</html>
